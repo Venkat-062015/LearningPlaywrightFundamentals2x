@@ -1,12 +1,14 @@
 # Learning Playwright Fundamentals 2x
 
-This repository contains a simple Playwright automation project demonstrating browser-based tests with Playwright.
+This repository contains a Playwright automation learning project with examples covering basic test creation, annotations, browser contexts, multiple pages, and test options.
 
 ## Project Structure
 
-- `tests/` - Playwright test files
-- `playwright.config.ts` - Playwright configuration
-- `package.json` - Project dependencies and scripts
+- tests/01_Basics/ - introductory Playwright examples
+- tests/02_First_tests/ - examples focused on running and configuring tests
+- tests/Template.spec.ts - starter template for new tests
+- playwright.config.ts - Playwright configuration
+- package.json - project dependencies and scripts
 
 ## Getting Started
 
@@ -20,16 +22,21 @@ This repository contains a simple Playwright automation project demonstrating br
    npx playwright install
    ```
 
-3. Run the tests:
+3. Run all tests:
    ```bash
    npx playwright test
    ```
 
-4. Run tests in headed mode:
+4. Run a specific test file:
+   ```bash
+   npx playwright test tests/02_First_tests/237_BCP_Test_Options.spec.ts
+   ```
+
+5. Run tests in headed mode:
    ```bash
    npx playwright test --headed
    ```
 
 ## Notes
 
-The sample tests verify basic Playwright website behavior and can be used as a starting point for learning Playwright fundamentals.
+These examples are intended for learning and practicing Playwright fundamentals, including assertions, test configuration, and browser context management.
